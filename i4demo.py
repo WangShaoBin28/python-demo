@@ -11,7 +11,7 @@ def dow(index):
     page = soup.find_all('img', attrs={'class': 'wper_img'})
     for aa in page:
         href = aa['data-big']
-        urllib.request.urlretrieve(href, 'D:/壁纸/' + aa['alt'] + '.' + aa['data-big'].split('.')[3])
+        urllib.request.urlretrieve(href, 'D:/壁纸11/' + aa['alt'] + '.' + aa['data-big'].split('.')[3])
         print('完成---' + aa['alt'] + '.' + aa['data-big'].split('.')[3])
         global num
         num = num + 1
